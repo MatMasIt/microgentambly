@@ -1,5 +1,7 @@
 # microgentambly
 
+![GitHub](https://img.shields.io/github/license/MatMasIt/microgentambly)
+
 Micro assembly-like interpreted languages
 Work in progress, does not support many features atm
 
