@@ -1,8 +1,17 @@
-INT i
-SET i 99
-:beg
-    OUT bottles of beer on the wall,$i$ bottles of beer\n
+# 99 bottles of beer on the wall - https://en.wikipedia.org/wiki/99_Bottles_of_Beer#References_in_computer_science
+INT i  
+# declare counter "i" as an integer
+SET i 99 
+# set i to 99
+:beering 
+    # main loop
+    OUT bottles of beer on the wall, $i$ bottles of beer\n
+    # Print line 1
     DEC i 1
+    # decrease i
     OUT Take one down and pass it around, $i$ bottles of beer on the wall\n
-JME beg i 1
+    # Print line 2
+JME beering i 1
+# loop until 1
 END
+#end 

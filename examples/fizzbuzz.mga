@@ -11,7 +11,7 @@ SET nfizz 3
 SET nbuzz 5
 SET modfizz 0
 SET modbuzz 0
-SET i 0
+SET i 1
 
 IN INT n How many?\n
 
@@ -20,12 +20,8 @@ IN INT n How many?\n
 
     MOD i nfizz modfizz
     JE fizzdo modfizz 0
-    :fizzdone
-
     MOD i nbuzz modbuzz
     JE buzzdo modbuzz 0
-    :buzzdone
-
     INC i 1
 
     JE loop modbuzz 0
@@ -41,10 +37,10 @@ IN INT n How many?\n
 
 :fizzdo
     OUT fizz
-    JMP fizzdone
+    RET
 
 :buzzdo
     OUT buzz
-    JMP buzzdone
+    RET
 
 
